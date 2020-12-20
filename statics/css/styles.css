@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Netflix";
+  src: url("../../fonts/AvenirNextLTPro-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Netflix";
+  src: url("../../fonts/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.credits {
+  font-family: system-ui;
+  background: #212429;
+  font-size: 11px;
+  color: white;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.credits a {
+  color: #f865b0;
+  text-decoration: none;
+}
+body {
+  background: black;
+  color: white;
+  margin: 0;
+  width: 100vw;
+  font-family: Netflix;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.header {
+  padding: 15px 15px 100px;
+  position: relative;
+  z-index: 2;
+  background-image: linear-gradient(
+    to bottom,
+    black 50%,
+    rgba(0, 0, 0, 0.925) 85%,
+    transparent 100%
+  );
+}
+.navigation {
+  padding: 10px 0;
+  margin: 0;
+
+  display: grid;
+  grid-auto-columns: 100px;
+  grid-auto-flow: column;
+  justify-content: space-around;
+}
+.navigation-item {
+  list-style: none;
+
+  text-align: center;
+}
+.featured {
+  margin-top: -90px;
+  position: relative;
+}
+.featured-details {
+  border: 1px solid yellow;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to top, black 0%, transparent 100%);
+}
+.tags {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+}
+.tag {
+  border: 1px solid white;
+  font-size: 14px;
+}
+.tag::before {
+  content: "•";
+  margin-right: 8px;
+  position: relative;
+}
+.tag:first-child::before {
+  display: none;
+}
+.featured-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 2em;
+}
+.button {
+  border: 1px solid blue;
+}
+.button-secondary {
+  border: 1px solid red;
+}
