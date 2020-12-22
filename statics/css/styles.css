@@ -203,7 +203,7 @@ main {
   fill: white;
 }
 .space-back {
-  padding: 15px 15px 5px;
+  padding: 20px 15px 10px;
 }
 .back-button {
   border: none;
@@ -212,9 +212,12 @@ main {
   background: url("../../images/icons/back.svg") no-repeat;
 }
 .featured-detail {
-  padding: 0 15px;
+  
    position: relative;
   overflow: hidden;
+}
+.contain{
+padding: 0 15px;
 }
 .title-serie{
   font-size: 1.7em;
@@ -340,6 +343,7 @@ main {
   background: url('../../images/icons/email-send.svg') no-repeat;
 }
 .barra{
+  margin-bottom: -10px;
     width: 42%;
    border-top: 5px solid red;
 }
