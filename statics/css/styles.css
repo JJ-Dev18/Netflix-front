@@ -213,6 +213,11 @@ main {
 }
 .featured-detail {
   padding: 0 15px;
+   position: relative;
+  overflow: hidden;
+}
+.title-serie{
+  font-size: 1.7em;
 }
 .detail {
   display: inline;
@@ -298,11 +303,13 @@ main {
 }
 .elenco{
   padding: 10px 0;
+  font-size: 14px;
+  color: #686868;
 }
 .detail-actions-list{
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  
   align-items: flex-end;
   padding: 0;
 }
@@ -314,6 +321,14 @@ main {
   
   margin: auto;
 }
+.detail-actions-item{
+  font-size: 12px;
+  margin-right: 15px;
+ 
+}
+.detail-actions-item a{
+   color: #686868;
+}
 .detail-actions{
   width: 50%;
 
@@ -324,3 +339,8 @@ main {
 .icon-share::before{
   background: url('../../images/icons/email-send.svg') no-repeat;
 }
+.barra{
+    width: 42%;
+   border-top: 5px solid red;
+}
+ 
